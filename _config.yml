@@ -1,0 +1,34 @@
+baseurl: ""
+url: "https://kinyugo.github.io"
+
+title: Kinyugo
+description: Portfolio website
+author: Kinyugo Maina
+
+# Layout defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: <!-- main -->
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+paginate: 1
+paginate_path: blog/page:num/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

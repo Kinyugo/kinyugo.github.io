@@ -1,0 +1,47 @@
+@import "./syntax.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font */
+@font-face {
+    font-family: "Lilex", monospace;
+    src: url("/assets/fonts/monospace/Lilex-VF.ttf");
+}
+/* Font */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+}
+
+h1 {
+    @apply text-3xl;
+}
+h2 {
+    @apply text-2xl;
+}
+h3 {
+    @apply text-xl;
+}
+/* Typography */
+
+/* NavBar */
+.nav-link {
+    @apply inline-flex;
+    @apply py-2 px-4 md:py-0 md:px-2;
+    @apply hover:bg-russet/10 md:hover:bg-transparent md:hover:underline;
+    @apply md:hover:text-russet;
+    @apply md:text-sm capitalize;
+    @apply transition-colors;
+  }
+  .nav-link--active {
+    @apply bg-russet/10 md:bg-transparent text-russet;
+  }
+/* NavBar */
+
+.highlight {
+    @apply rounded;
+    font-family:'Lilex', 'Courier New', Courier, monospace;
+}

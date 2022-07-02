@@ -1,0 +1,30 @@
+---
+title: Home
+---
+<script defer src="/assets/js/pages/index.js"></script>
+
+<div
+    class="flex flex-1 flex-wrap flex-col md:flex-row items-center justify-between w-full m-auto px-4 py-16 sm:px-8 md:px-16">
+    <!-- Site Title & Description -->
+    <div class="flex flex-col py-16">
+        <p class="mb-2 text-xl font-semibold">Hello I'm</p>
+        <h1 id="site-title" class="invisible mb-4 text-6xl font-display font-semibold transition-all">{{ site.title }}
+        </h1>
+        <p class="text-lg text-gray-700 dark:text-gray-300 text-justify">{{ site.description }}</p>
+    </div>
+    <!-- Site Title & Description -->
+
+    <!-- Site Image -->
+    <div class="flex items-center w-2/3 md:w-1/2 overflow-hidden">
+        <svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+            stroke-linejoin="round">
+            <clipPath id="mask">
+                <path
+                    d='M 2 0 c 2.348 0 3.783 0 9.783 0 c 3.217 0 5 1 6 4 c 1 4 -4.614 10.125 -10 10 c -2.52 0 -2.783 -4 -4 -6 C 3 7 -2.543 0 2 0 z'>
+            </clipPath>
+            <image class="w-full h-full" clip-path="url(#mask)" preserveAspectRatio="xMidYMid slice"
+                href="/assets/img/profile.jpg" />
+        </svg>
+    </div>
+    <!-- Site Image -->
+</div>

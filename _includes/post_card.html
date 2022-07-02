@@ -1,0 +1,73 @@
+{% capture class %}
+{% if include.post.featured %}
+w-full lg:flex lg:flex-1
+{% else %}
+w-full md:w-auto max-w-sm
+{% endif %}
+{% endcapture %}
+
+{% assign value = include.post_index | modulo:2 %}
+{% capture inner_class %}
+{% if include.post.featured %}
+{% if value == 0 %}
+lg:flex-row-reverse justify-between
+{% else %}
+lg:flex-row justify-between
+{% endif %}
+{% else %}
+flex-col
+{% endif %}
+{% endcapture %}
+
+
+
+{% capture img_class %}
+{% if include.post.featured %}
+{% if value == 0 %}
+lg:w-1/2 lg:h-full lg:rounded-none lg:rounded-r-lg
+{% else %}
+lg:w-1/2 lg:h-full lg:rounded-none lg:rounded-l-lg
+{% endif %}
+{% endif %}
+{% endcapture %}
+
+
+
+<div class="{{ class }}  mx-auto rounded-lg shadow-sm">
+    <div class="flex flex-col {{ inner_class }} w-full h-full  items-center">
+        <!-- Post Image -->
+        <img class="object-cover w-full h-48 rounded-t-lg {{ img_class }}" src="{{ include.post.photo }}"
+            alt="{{ include.post.title }}">
+        <!-- Post Image -->
+
+        <!-- Post Details -->
+        <div class="w-full h-full flex flex-col p-4">
+            <!-- Tags -->
+            <span class="flex items-center mb-2 text-xs text-gray-700 dark:text-gray-300">
+                <i class="bi bi-tags mr-2"></i>
+                {% for tag in include.post.tags %}
+                <span class="mr-2 ">{{ tag }}</span>
+                {% endfor %}
+            </span>
+            <!-- Tags -->
+
+            <!-- Date & Time To Read -->
+            <div class="flex items-center justify-between text-xs text-gray-700 dark:text-gray-300">
+                <span class="block mb-2">
+                    <i class="bi bi-calendar mr-2"></i>
+                    <span>{{ include.post.date | date_to_long_string: "ordinal", "US" }}</span>
+                </span>
+
+                {% include read_time.html content=include.post.content%}
+            </div>
+            <!-- Date & Time To Read -->
+
+            <!-- Title -->
+            <a href="{{ include.post.url }}" class="my-4 text-3xl font-medium hover:text-russet transition-colors">
+                {{ include.post.title }}
+            </a>
+            <!-- Title -->
+        </div>
+        <!-- Post Details -->
+    </div>
+</div>

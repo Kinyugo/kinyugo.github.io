@@ -1,0 +1,14 @@
+<div>
+    <h2 class="mb-4 font-sans font-semibold text-sm uppercase">
+        {{ include.name }}
+    </h2>
+    <div>
+        {% for link in include.links %}
+        <a href="{{ link.link }}"
+            class="block mb-2 text-gray-700 dark:text-gray-300 hover:text-russet dark:hover:text-russet transition-colors"
+            target="_blank" rel="noopener noreferrer">
+            {{ link.name }}
+        </a>
+        {% endfor %}
+    </div>
+</div>

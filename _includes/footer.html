@@ -1,0 +1,38 @@
+<footer class="p-4 sm:px-8 md:px-16">
+    <div class="flex flex-col md:flex-row md:justify-between mx-auto">
+        <!-- Site Name & Social Links -->
+        <div class="flex flex-col mb-6 md:mb-0">
+            <!-- Site Name -->
+            {% include site_name.html %}
+            <!-- Site Name -->
+
+            <!-- Social Links -->
+            <div class="flex items-center mt-2">
+                {% for link in site.data.social_links %}
+                {% include social_link.html link=link class="mr-4" %}
+                {% endfor %}
+            </div>
+            <!-- Social Links -->
+        </div>
+        <!-- Site Name & Social Links -->
+
+        <!-- Links -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-6">
+            {% include footer_section.html name="Quick Links" links=site.data.navlinks %}
+            {% include footer_section.html name="Follow Me" links=site.data.social_links %}
+        </div>
+        <!-- Links -->
+    </div>
+
+    <!-- Separator -->
+    <hr class="my-6 border-russet/10 sm:mx-auto lg:my-8">
+    <!-- Separator -->
+
+    <!-- Copyright -->
+    <div class="flex items-center justify-center text-gray-700 dark:text-gray-300">&copy;
+        <span id="copyright-year" class="mx-1"></span>
+        <a href="/" class="hover:underline mx-1">{{ site.title }}.</a>
+        <span>All Rights Reserved.</span>
+    </div>
+    <!-- Copyright -->
+</footer>

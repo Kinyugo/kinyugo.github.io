@@ -1,0 +1,6 @@
+<span class="inline-flex items-center {{ include.class }}">
+    <i class="bi bi-hourglass mr-2" role="img" aria-label="time to read"></i>
+    <span>
+        {% assign words = include.content | strip_html | number_of_words %}
+        {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {% endif %} </span>
+    </span>

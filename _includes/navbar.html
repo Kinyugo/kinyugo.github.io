@@ -1,0 +1,38 @@
+<nav class="p-4 sm:px-8 md:px-16">
+    <div class="flex flex-wrap justify-between items-center">
+        <!-- Site Name -->
+        {% include site_name.html %}
+        <!-- Site Name -->
+
+        <!-- Mobile Menu Toggle -->
+        <button data-collapse-toggle="mobile-menu" type="button"
+            class="order-2 md:hidden inline-flex items-center p-2 ml-auto rounded-full hover:bg-russet/10 hover:text-russet transition-colors"
+            aria-controls="mobile-menu" aria-expanded="false" onclick="toggleNavbar('mobile-menu')">
+            <span class="sr-only">Open main menu</span>
+            <span class="primary h-6 w-6"><i class="bi bi-list"></i></span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+
+
+        <!-- Nav Menu -->
+        <div id="mobile-menu" class="order-last hidden md:block md:order-3 w-full md:w-auto">
+            <div
+                class="flex flex-col md:flex-row md:justify-end md:space-x-8 mt-4 md:mt-0 md:font-medium divide-y md:divide-y-0 divide-zinc-200 dark:divide-zinc-700">
+                <!-- Dynamically Build The Menu -->
+                {% for link in site.data.navlinks %}
+                {% include navlink.html link=link %}
+                {% endfor %}
+                <!-- Dynamically Build The Menu -->
+            </div>
+        </div>
+        <!-- Nav Menu -->
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle"
+            class="order-3 md:order-last md:inline-flex inline-flex items-center mx-2 p-2 rounded-full hover:bg-russet/10 hover:text-russet transition-colors">
+            <i id="theme-toggle-dark" class="bi bi-moon-stars hidden h-6 w-6" aria-hidden="true"></i>
+            <i id="theme-toggle-light" class="bi bi-sun hidden h-6 w-6" aria-hidden="true"></i>
+        </button>
+        <!-- Theme Toggle -->
+    </div>
+</nav>
