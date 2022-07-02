@@ -10,7 +10,7 @@ module.exports = {
         russet: {
           light: "#845331",
           DEFAULT: "#845331",
-          dark: "#c9773f",
+          dark: "#cf9f7d",
         },
         manatee: "#8D99AE",
         "light-yellow": "#FEFEE3",

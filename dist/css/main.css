@@ -2396,7 +2396,7 @@ h3{
 
   .dark .nav-link:hover{
     --tw-text-opacity:1;
-    color:rgb(201 119 63 / var(--tw-text-opacity))
+    color:rgb(207 159 125 / var(--tw-text-opacity))
   }
 }
 
@@ -2427,7 +2427,7 @@ h3{
 
 .dark .nav-link--active{
   --tw-text-opacity:1;
-  color:rgb(201 119 63 / var(--tw-text-opacity))
+  color:rgb(207 159 125 / var(--tw-text-opacity))
 }
 
 @media (min-width: 768px){
@@ -2512,7 +2512,7 @@ h3{
 }
 
 .dark .dark\:bg-russet-dark\/10{
-  background-color:rgb(201 119 63 / 0.1)
+  background-color:rgb(207 159 125 / 0.1)
 }
 
 .dark .dark\:text-gray-300{
@@ -2522,7 +2522,7 @@ h3{
 
 .dark .dark\:text-russet-dark{
   --tw-text-opacity:1;
-  color:rgb(201 119 63 / var(--tw-text-opacity))
+  color:rgb(207 159 125 / var(--tw-text-opacity))
 }
 
 .dark .dark\:text-gray-200{
@@ -2536,21 +2536,21 @@ h3{
 }
 
 .dark .dark\:hover\:bg-russet-dark\/10:hover{
-  background-color:rgb(201 119 63 / 0.1)
+  background-color:rgb(207 159 125 / 0.1)
 }
 
 .dark .hover\:dark\:bg-russet-dark\/10:hover{
-  background-color:rgb(201 119 63 / 0.1)
+  background-color:rgb(207 159 125 / 0.1)
 }
 
 .dark .dark\:hover\:text-russet-dark:hover{
   --tw-text-opacity:1;
-  color:rgb(201 119 63 / var(--tw-text-opacity))
+  color:rgb(207 159 125 / var(--tw-text-opacity))
 }
 
 .dark .hover\:dark\:text-russet-dark:hover{
   --tw-text-opacity:1;
-  color:rgb(201 119 63 / var(--tw-text-opacity))
+  color:rgb(207 159 125 / var(--tw-text-opacity))
 }
 
 .dark .prose-headings\:dark\:text-gray-200 :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))){
@@ -2565,7 +2565,7 @@ h3{
 
 .dark .prose-a\:dark\:text-russet-dark :is(:where(a):not(:where([class~="not-prose"] *))){
   --tw-text-opacity:1;
-  color:rgb(201 119 63 / var(--tw-text-opacity))
+  color:rgb(207 159 125 / var(--tw-text-opacity))
 }
 
 @media (min-width: 640px){
