@@ -2393,6 +2393,11 @@ h3{
     --tw-text-opacity:1;
     color:rgb(132 83 49 / var(--tw-text-opacity))
   }
+
+  .dark .nav-link:hover{
+    --tw-text-opacity:1;
+    color:rgb(201 119 63 / var(--tw-text-opacity))
+  }
 }
 
 .nav-link{
@@ -2418,6 +2423,11 @@ h3{
   background-color:rgb(132 83 49 / 0.1);
   --tw-text-opacity:1;
   color:rgb(132 83 49 / var(--tw-text-opacity))
+}
+
+.dark .nav-link--active{
+  --tw-text-opacity:1;
+  color:rgb(201 119 63 / var(--tw-text-opacity))
 }
 
 @media (min-width: 768px){
@@ -2498,12 +2508,21 @@ h3{
 
 .dark .dark\:bg-smoky-black{
   --tw-bg-opacity:1;
-  background-color:rgb(9 9 10 / var(--tw-bg-opacity))
+  background-color:rgb(30 32 34 / var(--tw-bg-opacity))
+}
+
+.dark .dark\:bg-russet-dark\/10{
+  background-color:rgb(201 119 63 / 0.1)
 }
 
 .dark .dark\:text-gray-300{
   --tw-text-opacity:1;
   color:rgb(209 213 219 / var(--tw-text-opacity))
+}
+
+.dark .dark\:text-russet-dark{
+  --tw-text-opacity:1;
+  color:rgb(201 119 63 / var(--tw-text-opacity))
 }
 
 .dark .dark\:text-gray-200{
@@ -2516,9 +2535,22 @@ h3{
   color:rgb(156 163 175 / var(--tw-text-opacity))
 }
 
-.dark .dark\:hover\:text-russet:hover{
+.dark .dark\:hover\:bg-russet-dark\/10:hover{
+  background-color:rgb(201 119 63 / 0.1)
+}
+
+.dark .hover\:dark\:bg-russet-dark\/10:hover{
+  background-color:rgb(201 119 63 / 0.1)
+}
+
+.dark .dark\:hover\:text-russet-dark:hover{
   --tw-text-opacity:1;
-  color:rgb(132 83 49 / var(--tw-text-opacity))
+  color:rgb(201 119 63 / var(--tw-text-opacity))
+}
+
+.dark .hover\:dark\:text-russet-dark:hover{
+  --tw-text-opacity:1;
+  color:rgb(201 119 63 / var(--tw-text-opacity))
 }
 
 .dark .prose-headings\:dark\:text-gray-200 :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))){
@@ -2529,6 +2561,11 @@ h3{
 .dark .prose-p\:dark\:text-gray-300 :is(:where(p):not(:where([class~="not-prose"] *))){
   --tw-text-opacity:1;
   color:rgb(209 213 219 / var(--tw-text-opacity))
+}
+
+.dark .prose-a\:dark\:text-russet-dark :is(:where(a):not(:where([class~="not-prose"] *))){
+  --tw-text-opacity:1;
+  color:rgb(201 119 63 / var(--tw-text-opacity))
 }
 
 @media (min-width: 640px){
@@ -2562,6 +2599,11 @@ h3{
 
   .md\:order-last{
     order:9999
+  }
+
+  .md\:my-4{
+    margin-top:1rem;
+    margin-bottom:1rem
   }
 
   .md\:mb-0{

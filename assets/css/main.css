@@ -32,12 +32,12 @@ h3 {
     @apply inline-flex;
     @apply py-2 px-4 md:py-0 md:px-2;
     @apply hover:bg-russet/10 md:hover:bg-transparent md:hover:underline;
-    @apply md:hover:text-russet;
+    @apply md:hover:text-russet md:hover:dark:text-russet-dark;
     @apply md:text-sm capitalize;
     @apply transition-colors;
   }
   .nav-link--active {
-    @apply bg-russet/10 md:bg-transparent text-russet;
+    @apply bg-russet/10 md:bg-transparent text-russet dark:text-russet-dark;
   }
 /* NavBar */
 

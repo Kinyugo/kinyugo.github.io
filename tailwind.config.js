@@ -5,9 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "smoky-black": "#09090A",
+        "smoky-black": "#1e2022",
         sage: "#C8CC92",
-        russet: "#845331",
+        russet: {
+          light: "#845331",
+          DEFAULT: "#845331",
+          dark: "#c9773f",
+        },
         manatee: "#8D99AE",
         "light-yellow": "#FEFEE3",
         "pastel-pink": "#F7A9A8",

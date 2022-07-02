@@ -17,7 +17,7 @@ layout: default
             <div class="mx-auto w-full max-w-2xl mb-4">
                 <!-- Category -->
                 <span
-                    class="w-min mb-2 text-xs font-medium bg-russet/10 text-russet py-0.5 px-2 rounded-full capitalize">
+                    class="w-min mb-2 text-xs font-medium bg-russet/10 dark:bg-russet-dark/10 text-russet dark:text-russet-dark py-0.5 px-2 rounded-full capitalize">
                     {{ page.category }}
                 </span>
                 <!-- Category -->
@@ -61,7 +61,7 @@ layout: default
             <!-- Photo -->
 
             <!-- Blog Post Body -->
-            <article class="mx-auto max-w-2xl">
+            <article class="mx-auto max-w-2xl md:my-4">
                 <section class="lg:hidden my-4 px-4 ">
                     <hr class="mb-4 border-russet/10">
                     <h4 class="mb-2 font-semibold">Table of Contents</h4>
@@ -71,7 +71,7 @@ layout: default
                     <hr class="mb-4 border-russet/10">
                 </section>
                 <section
-                    class="prose prose-lg prose-p:text-justify dark:prose-invert prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-headings:dark:text-gray-200 prose-a:text-russet prose-a:underline">
+                    class="prose prose-lg prose-p:text-justify dark:prose-invert prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-headings:dark:text-gray-200 prose-a:text-russet prose-a:dark:text-russet-dark prose-a:underline">
                     {{ page.content | remove: page.excerpt }}
                 </section>
             </article>
