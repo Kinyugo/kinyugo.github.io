@@ -43,5 +43,5 @@ h3 {
 
 .highlight {
     @apply rounded;
-    font-family:'Lilex', 'Courier New', Courier, monospace;
+    font-family: 'Lilex', 'IBM Plex Mono', monospace;
 }

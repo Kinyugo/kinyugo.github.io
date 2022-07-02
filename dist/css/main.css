@@ -2430,7 +2430,7 @@ h3{
 
 .highlight{
   border-radius:0.25rem;
-  font-family:'Lilex', 'Courier New', Courier, monospace
+  font-family: 'Lilex', 'IBM Plex Mono', monospace
 }
 
 .hover\:scale-105:hover{
