@@ -4,14 +4,6 @@ layout: default
 
 <div class="mx-auto p-4 sm:px-8 md:px-16">
     <div class="w-full flex">
-        <section class="hidden sticky h-screen top-1/3 lg:block my-16 p-2">
-            <hr class="mb-4 border-russet/10">
-            <h4 class="mb-2 font-semibold">Table of Contents</h4>
-            {% assign markup = page.content | remove: page.excerpt %}
-            {% include toc.html html=markup class="flex.flex-col.list-decimal.py-4."
-            item_class="my-1.text-sm.font-medium.hover:underline"%}
-            <hr class="mb-4 border-russet/10">
-        </section>
         <div class="mx-auto w-full max-w-3xl mb-4">
             <!-- Header -->
             <div class="mx-auto w-full max-w-2xl mb-4">
@@ -77,6 +69,14 @@ layout: default
             </article>
             <!-- Blog Post Body -->
         </div>
+        <section class="hidden sticky h-screen top-1/3 lg:block my-16 ml-8 p-2">
+            <hr class="mb-4 border-russet/10">
+            <h4 class="mb-2 font-semibold">Table of Contents</h4>
+            {% assign markup = page.content | remove: page.excerpt %}
+            {% include toc.html html=markup class="flex.flex-col.list-decimal.py-4."
+            item_class="my-1.text-sm.font-medium.hover:underline"%}
+            <hr class="mb-4 border-russet/10">
+        </section>
     </div>
 
 </div>
