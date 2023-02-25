@@ -1,5 +1,5 @@
 <div
-    class="flex flex-col w-full max-w-3xl mx-auto px-8 py-4 bg-gray-50 dark:bg-black/20 rounded shadow {{ include.class }}">
+    class="flex flex-col justify-between w-full max-w-3xl mx-auto px-8 py-4 bg-gray-50 dark:bg-black/20 rounded shadow {{ include.class }}">
     <!-- Journal & Date -->
     <div class="flex items-center justify-between mb-4">
         <span class="text-sm text-gray-600 dark:text-gray-400">{{ include.publication.journal }}</span>
@@ -44,7 +44,7 @@
 
     <!-- Abstract -->
     <p class="text-justify leading-relaxed tracking-wide m-4 text-sm text-gray-700 dark:text-gray-300 text-ellipsis">
-        {{ publication.abstract | truncatewords: 50 }}
+        {{ include.publication.abstract | truncatewords: 50 }}
     </p>
     <!-- Abstract -->
 

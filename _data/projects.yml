@@ -1,0 +1,32 @@
+- title: Msanii
+  link: https://github.com/Kinyugo/msanii
+  description: >
+    Official implementation of the Msanii paper. The paper introduces a novel diffusion
+    based model for audio synthesis. It outperforms existing diffusion models in terms of
+    fidelity, long-term coherence and efficiency.
+  tags:
+    - Paper
+    - PyTorch
+    - Music Synthesis
+  featured: true
+
+- title: odewel
+  link: https://github.com/Kinyugo/odewel
+  description: >
+    odewel (/əʊdwel/) is a library that can optimize machine learning models for better
+    efficiency by loading weights only when needed for computation. This makes
+    the models leaner and more nimble, and allows them to run on any hardware,
+    regardless of its size or the hardware capabilities.
+  tags:
+    - PyTorch
+    - Model Inference
+  featured: true
+
+- title: dogoGPT
+  link: https://github.com/Kinyugo/dogoGPT
+  description: >
+    A tiny GPT implementation that uses the U-Net block from Msanii paper.
+  tags:
+    - PyTorch
+    - NLP
+  featured: true
