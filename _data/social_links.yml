@@ -1,0 +1,9 @@
+- name: GitHub
+  link: https://github.com/kinyugo
+  icon: bi bi-github
+- name: Linkedin
+  link: https://www.linkedin.com/in/denis-kinyugo/
+  icon: bi bi-linkedin
+- name: Twitter
+  link: https://twitter.com/mkinyugo
+  icon: bi bi-twitter

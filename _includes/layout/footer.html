@@ -1,0 +1,45 @@
+<footer class="py-8">
+  <!-- Site Name & Social Links -->
+  <div class="flex flex-row items-center justify-between px-8 md:px-8">
+    <!-- Site Name -->
+    <a href="/" class="block font-display text-2xl tracking-tight">KM</a>
+    <!-- Site Name -->
+
+    <!-- Social Links -->
+    <div class="flex gap-6 items-center">
+      {% for link in site.data.social_links %}
+      <a
+        class=""
+        href="{{ link.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="text-gray-700 hover:text-gray-900 transition-colors">
+          <i
+            class="{{ link.icon }}"
+            role="img"
+            aria-label="{{ link.name }}"
+          ></i>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+    <!-- Social Links -->
+    <!-- Site Name & Social Links -->
+  </div>
+
+  <!-- Separator -->
+  <hr class="my-2 border-gray-100 sm:mx-auto" />
+  <!-- Separator -->
+
+  <!-- Copyright -->
+  <div
+    class="flex items-center justify-center text-sm text-gray-700 dark:text-gray-300"
+  >
+    &copy;
+    <span id="copyright-year" class="mx-1"></span>
+    <a href="/" class="hover:underline mx-1">{{ site.title }}.</a>
+    <span>All Rights Reserved.</span>
+  </div>
+  <!-- Copyright -->
+</footer>

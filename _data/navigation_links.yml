@@ -1,0 +1,8 @@
+- name: Publications
+  link: /publications
+- name: Projects
+  link: /projects
+- name: Blog
+  link: /blog
+- name: Resume
+  link: /resume
