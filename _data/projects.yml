@@ -25,7 +25,10 @@
 - title: dogoGPT
   link: https://github.com/Kinyugo/dogoGPT
   description: >
-    A tiny GPT implementation that uses the U-Net block from Msanii paper.
+    A tiny character level GPT implementation trained on shakespeare. The model leverages
+    the recently introduced U-Net block from Msanii to capture both global and local
+    dependencies between characters, resulting in text that has both short term and
+    long-term coherence.
   tags:
     - PyTorch
     - NLP
