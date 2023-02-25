@@ -1,6 +1,6 @@
 <footer class="py-8">
   <!-- Site Name & Social Links -->
-  <div class="flex flex-row items-center justify-between px-8 md:px-8">
+  <div class="flex flex-row items-center justify-between px-8 md:px-16">
     <!-- Site Name -->
     <a href="/" class="block font-display text-2xl tracking-tight">KM</a>
     <!-- Site Name -->
@@ -14,7 +14,9 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="text-gray-700 hover:text-gray-900 transition-colors">
+        <span
+          class="hover:text-gray-700 dark:hover:text-gray-100 transition-colors"
+        >
           <i
             class="{{ link.icon }}"
             role="img"
@@ -29,11 +31,13 @@
   </div>
 
   <!-- Separator -->
-  <hr class="my-2 border-gray-100 sm:mx-auto" />
+  <hr class="my-2 border-gray-100 dark:border-gray-700 sm:mx-auto" />
   <!-- Separator -->
 
   <!-- Copyright -->
-  <div class="flex items-center justify-center text-sm text-gray-700">
+  <div
+    class="flex items-center justify-center text-sm text-gray-700 dark:text-gray-300"
+  >
     &copy;
     <span id="copyright-year" class="mx-1"></span>
     <a href="/" class="hover:underline mx-1">{{ site.title }}.</a>

@@ -8,16 +8,24 @@
 <div class="flex flex-col md:flex-row gap-10 md:gap-5 items-center p-10">
   <!-- Biography -->
   <div class="flex flex-col gap-5 max-w-xs mx-auto">
-    <h2 class="uppercase text-xs text-gray-600">Biography</h2>
-    <p class="font-serif leading-6 text-justify text-gray-700">
+    <h2 class="uppercase text-xs text-gray-600 dark:text-gray-400">
+      Biography
+    </h2>
+    <p
+      class="font-serif leading-6 text-justify text-gray-700 dark:text-gray-300"
+    >
       {{ site.author_biography }}
     </p>
   </div>
   <!-- Biography -->
 
   <!-- Profile Image -->
-  <div class="flex max-w-xs p-4 border border-gray-300 profile-clip-path">
-    <div class="w-full h-full bg-gradient-to-b from-gray-200 profile-clip-path">
+  <div
+    class="flex max-w-xs p-4 border border-gray-300 dark:border-gray-500 profile-clip-path"
+  >
+    <div
+      class="w-full h-full bg-gradient-to-b from-gray-200 dark:from-gray-50 profile-clip-path"
+    >
       <img src="{{ "/assets/img/profile.png" | relative_url }}" alt="Profile
       image" class="w-full h-full profile-clip-path">
     </div>
@@ -26,21 +34,19 @@
 
   <!-- Contact -->
   <div class="flex flex-col gap-5 max-w-xs mx-auto">
-    <h2 class="uppercase text-xs text-gray-600">Contact</h2>
+    <h2 class="uppercase text-xs text-gray-600 dark:text-gray-400">Contact</h2>
 
-    <div class="flex flex-col gap-1">
-      <p class="font-serif leading-6 text-justify text-gray-700">
-        Nairobi, Kenya
-      </p>
+    <div class="flex flex-col gap-1 text-gray-700 dark:text-gray-300">
+      <p class="font-serif leading-6 text-justify">Nairobi, Kenya</p>
       <a
         href="mailto:{{ site.author_email }}"
-        class="font-serif leading-6 text-justify text-gray-700 hover:underline"
+        class="font-serif leading-6 text-justify hover:underline"
       >
         {{ site.author_email }}
       </a>
       <a
         href="tel:{{ site.author_phone }}"
-        class="font-serif leading-6 text-justify text-gray-700 hover:underline"
+        class="font-serif leading-6 text-justify hover:underline"
       >
         {{ site.author_phone }}
       </a>
@@ -53,7 +59,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="text-gray-700 hover:text-gray-900 transition-colors">
+          <span
+            class="text-black dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 transition-colors"
+          >
             <i
               class="{{ link.icon }}"
               role="img"

@@ -8,7 +8,7 @@
     <button
       data-collapse-toggle="mobile-menu"
       type="button"
-      class="order-2 md:hidden inline-flex items-center p-2 ml-auto rounded-full hover:bg-gray-200 hover:text-black transition-colors"
+      class="order-2 md:hidden inline-flex items-center p-2 ml-auto rounded-full dark:text-gray-300 dark:hover:text-black hover:bg-gray-200 hover:text-black transition-colors"
       aria-controls="mobile-menu"
       aria-expanded="false"
       onclick="toggleNavbar('mobile-menu', 'mobile-menu-icon')"
@@ -23,10 +23,10 @@
     <!-- Nav Menu -->
     <div
       id="mobile-menu"
-      class="order-last hidden md:block absolute md:relative top-24 left-0 md:top-0 px-8 sm:px-16 md:px-0 md:order-3 w-full h-full md:h-auto md:w-auto bg-white md:bg-transparent"
+      class="order-last hidden md:block absolute md:relative top-24 left-0 md:top-0 px-8 sm:px-16 md:px-0 md:order-3 w-full h-full md:h-auto md:w-auto bg-white dark:bg-smoky-black md:bg-transparent"
     >
       <div
-        class="flex flex-col md:flex-row md:justify-end md:space-x-8 mt-4 md:mt-0 md:font-medium divide-y md:divide-y-0 divide-zinc-200 dark:divide-zinc-700"
+        class="flex flex-col md:flex-row md:justify-end md:space-x-8 mt-4 md:mt-0 md:font-medium divide-y md:divide-y-0 divide-zinc-300 dark:divide-zinc-800"
       >
         <!-- Dynamically Build The Menu -->
         {% for link in site.data.navigation_links %}
@@ -45,7 +45,7 @@
     <!-- Theme Toggle -->
     <button
       id="theme-toggle"
-      class="order-3 md:order-last md:inline-flex inline-flex items-center mx-2 p-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-black transition-colors"
+      class="order-3 md:order-last md:inline-flex inline-flex items-center mx-2 p-2 rounded-full text-gray-700 dark:text-gray-300 dark:hover:text-black hover:bg-gray-100 hover:text-black transition-colors"
     >
       <i
         id="theme-toggle-dark"

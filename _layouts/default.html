@@ -24,14 +24,16 @@
 
 </head>
 
-<body>
-  <!-- Navbar -->
-  {% include layout/navbar.html %}
-  <!-- Navbar -->
+<body class="dark:bg-smoky-black dark:text-gray-300 transition-colors">
+  <main class="min-h-screen">
+    <!-- Navbar -->
+    {% include layout/navbar.html %}
+    <!-- Navbar -->
 
-  <!-- Main Content -->
-  {{ content }}
-  <!-- Main Content -->
+    <!-- Main Content -->
+    {{ content }}
+    <!-- Main Content -->
+  </main>
 
   <!-- Footer -->
   {% include layout/footer.html %}
