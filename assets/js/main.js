@@ -3,8 +3,8 @@ const toggleNavbar = (elementId, iconId) => {
   const navbar = document.getElementById(elementId);
   const menuIcon = document.getElementById(iconId);
 
-  navbar.classList.toggle("opacity-0");
-  navbar.classList.toggle("opacity-100");
+  navbar.classList.toggle("hidden");
+  navbar.classList.toggle("block");
 
   menuIcon.classList.toggle("bi-list");
   menuIcon.classList.toggle("bi-x-lg");
