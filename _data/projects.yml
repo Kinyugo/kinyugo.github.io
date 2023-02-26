@@ -4,10 +4,20 @@
     Official implementation of the Msanii paper. The paper introduces a novel diffusion
     based model for audio synthesis. It outperforms existing diffusion models in terms of
     fidelity, long-term coherence and efficiency.
+  links:
+    - name: arXiv
+      link: https://arxiv.org/abs/2301.06468
+    - name: GitHub
+      link: https://github.com/Kinyugo/msanii
+    - name: Demo
+      link: https://kinyugo.github.io/msanii-demo/
+    - name: HF Spaces
+      link: https://huggingface.co/spaces/kinyugo/msanii
   tags:
+    - Music Synthesis
     - Paper
     - PyTorch
-    - Music Synthesis
+    - WiP
   featured: true
 
 - title: odewel
@@ -17,9 +27,13 @@
     efficiency by loading weights only when needed for computation. This makes
     the models leaner and more nimble, and allows them to run on any hardware,
     regardless of its size or the hardware capabilities.
+  links:
+    - name: GitHub
+      link: https://github.com/Kinyugo/odewel
   tags:
-    - PyTorch
     - Model Inference
+    - PyTorch
+    - WiP
   featured: true
 
 - title: dogoGPT
@@ -29,7 +43,10 @@
     the recently introduced U-Net block from Msanii to capture both global and local
     dependencies between characters, resulting in text that has both short term and
     long-term coherence.
+  links:
+    - name: GitHub
+      link: https://github.com/Kinyugo/dogoGPT
   tags:
-    - PyTorch
     - NLP
+    - PyTorch
   featured: false

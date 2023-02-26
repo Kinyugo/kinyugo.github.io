@@ -3,6 +3,9 @@ layout: default
 title: Projects
 ---
 
+{% if site.data.projects == null or site.data.projects.size == 0 %}
+{% include shared/no_content.html %}
+{% else %}
 <!-- Featured Projects -->
 {% capture featured_projects %}
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -33,3 +36,4 @@ title: Projects
 {% include shared/page_section.html title="All Projects" content=all_projects %}
 {% endif %}
 <!-- All Projects -->
+{% endif %}

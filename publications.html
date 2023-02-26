@@ -3,6 +3,9 @@ layout: default
 title: Publications
 ---
 
+{% if site.data.publications == null or site.data.publications.size == 0 %}
+{% include shared/no_content.html %}
+{% else %}
 <!-- Featured Publications -->
 {% capture featured_publications %}
 <div class="flex flex-col gap-5">
@@ -33,3 +36,4 @@ title: Publications
 {% include shared/page_section.html title="All Publications" content=all_publications %}
 {% endif %}
 <!-- All Publications -->
+{% endif %}
