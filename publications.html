@@ -1,0 +1,35 @@
+---
+layout: default
+title: Publications
+---
+
+<!-- Featured Publications -->
+{% capture featured_publications %}
+<div class="flex flex-col gap-5">
+    {% assign featured_publications = site.data.publications | where: "featured", true %}
+    {% for publication in featured_publications %}
+    {% assign publication_index = forloop.index %}
+    {% include shared/publication_card.html publication=publication index=publication_index featured=true %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if featured_publications.size != 0 %}
+{% include shared/page_section.html title="Featured Publications" content=featured_publications %}
+{% endif %}
+<!-- Featured Publications -->
+
+<!-- All Publications -->
+{% capture all_publications %}
+<div class="grid grid-cols-1 lg:grid-cols-2">
+    {% for publication in site.data.publications %}
+    {% assign publication_index = forloop.index %}
+    {% include shared/publication_card.html publication=publication index=publication_index %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if all_publications.size != 0 %}
+{% include shared/page_section.html title="All Publications" content=all_publications %}
+{% endif %}
+<!-- All Publications -->

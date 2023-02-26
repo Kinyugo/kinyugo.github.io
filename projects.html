@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+---
+
+<!-- Featured Projects -->
+{% capture featured_projects %}
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    {% assign featured_projects = site.data.projects | where: "featured", true %}
+    {% for project in featured_projects %}
+    {% assign project_index = forloop.index %}
+    {% include shared/project_card.html project=project index=project_index featured=true %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if featured_projects.size != 0 %}
+{% include shared/page_section.html title="Featured Projects" content=featured_projects %}
+{% endif %}
+<!-- Featured Projects -->
+
+<!-- All Projects -->
+{% capture all_projects %}
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {% for project in site.data.projects %}
+    {% assign project_index = forloop.index %}
+    {% include shared/project_card.html project=project index=project_index featured=true %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if all_projects.size != 0 %}
+{% include shared/page_section.html title="All Projects" content=all_projects %}
+{% endif %}
+<!-- All Projects -->
