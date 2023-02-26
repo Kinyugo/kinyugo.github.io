@@ -21,7 +21,8 @@
         class="flex flex-col md:flex-row md:justify-end md:space-x-8 mt-4 md:mt-0 md:font-medium divide-y md:divide-y-0 divide-zinc-300 dark:divide-zinc-800">
         <!-- Dynamically Build The Menu -->
         {% for link in site.data.navigation_links %}
-        <a href="{{ link.link }}" class="navlink {% if page.title == link.name %}navlink-active{% endif %}">
+        <a href="{{ link.link | relative_url }}"
+          class="navlink {% if page.title == link.name %}navlink-active{% endif %}">
           {{ link.name }}
         </a>
         {% endfor %}
