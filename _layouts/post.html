@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="flex flex-col max-w-3xl mx-auto p-4 sm:px-8 md:px-16">
+
+    <!-- Title -->
+    <a href="{{ include.post.url }}"
+        class="my-6 font-display text-4xl text-center text-black dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100">
+        {{ page.title }}
+    </a>
+    <!-- Title -->
+
+    <!-- Time To Read & Date -->
+    <div class="flex items-center justify-between mb-4">
+        <span class="text-sm text-gray-600 dark:text-gray-400">
+            {{ page.date | date_to_long_string: "ordinal", "US" }}
+            {{ "." }}
+            {% assign words = page.content | strip_html | number_of_words %}
+            {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {% endif %} read</span>
+
+                <!-- Tags -->
+                <div class="flex flex-row flex-wrap gap-3 justify-center items-center mb-3">
+                    {% for tag in page.tags %}
+                    <span class="text-sm text-gray-600 dark:text-gray-400">
+                        {{ tag }}
+                    </span>
+                    {% endfor %}
+                </div>
+                <!-- Tags -->
+    </div>
+    <!-- Time To Read & Date -->
+
+    <!-- Photo -->
+    <img src="{{ page.photo }}" alt="{{ page.title }}" class="w-full rounded">
+    <!-- Photo -->
+
+    <!-- Excerpt -->
+    <p
+        class="font-serif italic text-center leading-relaxed tracking-wide mx-8 my-6 text-sm text-gray-700 dark:text-gray-300 text-ellipsis">
+        &quot;{{ page.excerpt | strip_html }}&quot;
+    </p>
+    <!-- Excerpt -->
+
+
+    <!-- Body -->
+    <article
+        class="prose prose-p:text-justify dark:prose-invert prose-headings:font-normal prose-headings:font-serif prose-headings:dark:text-gray-100 prose-a:text-inherit prose-a:underline hover:prose-a:opacity-90 prose-strong:font-[500]">
+        {{ page.content | remove: page.excerpt }}
+    </article>
+    <!-- Body -->
+</div>

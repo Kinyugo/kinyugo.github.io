@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+---
+
+{% if site.posts == null or site.posts.size == 0 %}
+{% include shared/no_content.html %}
+{% else %}
+<!-- Featured Posts -->
+{% capture featured_posts %}
+<div class="grid grid-cols-1 gap-5">
+    {% assign featured_posts = site.posts | where: "featured", true %}
+    {% for post in featured_posts %}
+    {% assign post_index = forloop.index %}
+    {% include blog/post_card.html post=post post_index=post_index featured=true %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if featured_posts.size != 0 %}
+{% include shared/page_section.html title="Featured Posts" content=featured_posts %}
+{% endif %}
+<!-- Featured Posts -->
+
+<!-- All posts -->
+{% capture all_posts %}
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {% for post in paginator.posts %}
+    {% assign post_index = forloop.index %}
+    {% include blog/post_card.html post=post post_index=post_index featured=false %}
+    {% endfor %}
+</div>
+{% endcapture %}
+
+{% if all_posts.size != 0 or paginator.posts != null %}
+{% include shared/page_section.html title="All posts" content=all_posts %}
+{% endif %}
+<!-- All posts -->
+{% endif %}

@@ -1,0 +1,22 @@
+{% capture link_class %}text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-gray-100 font-bold mx-2
+py-2
+px-2{% endcapture %}
+
+<div class="inline-flex items-center">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <a href="#all-posts" class="border-t-2 border-gray-100 dark:border-gray-100/5 {{ link_class }}">
+        {{ page }}
+    </a>
+    {% elsif page == 1 %}
+    <a href="{{ '/blog' | relative_url | append: '#all-posts'}}" class="{{ link_class }}">
+        {{ page }}
+    </a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num' , page | append: '#all-posts'}}"
+        class="{{ link_class }}">
+        {{ page }}
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>

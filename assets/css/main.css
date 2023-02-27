@@ -1,9 +1,10 @@
 ---
 ---
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 html {
     font-variant-ligatures: none;
@@ -22,3 +23,12 @@ html {
 .navlink-active {
     @apply bg-gray-100 text-black dark:text-black hover:bg-gray-300 md:bg-inherit md:text-inherit md:dark:text-inherit md:dark:hover:bg-inherit md:underline;
 }
+
+.highlight {
+    @apply rounded;
+}
+
+.katex {
+    @apply tracking-wider;
+}
+

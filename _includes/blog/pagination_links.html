@@ -1,0 +1,15 @@
+<div class="flex items-center justify-between my-4">
+    {% if paginator.total_pages > 1 %}
+    <!-- Previous Pagination Links -->
+    {% include prev_pagination_link.html %}
+    <!-- Previous Pagination Links -->
+
+    <!-- Page Links -->
+    {% include page_links.html %}
+    <!-- Page Links -->
+
+    <!-- Next Pagination Links -->
+    {% include next_pagination_link.html %}
+    <!-- Next Pagination Links -->
+    {% endif %}
+</div>

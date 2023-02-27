@@ -1,0 +1,13 @@
+{% if paginator.previous_page %}
+<a href="{{ paginator.previous_page_path | relative_url | append: '#all-posts'}}"
+    class="inline-flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-gray-100 transition-colors">
+    <i class="bi bi-arrow-left mr-2"></i>
+    <span>Previous</span>
+</a>
+{% else %}
+<a disabled href="#all-posts"
+    class="inline-flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300 cursor-not-allowed pointer-events-none opacity-30">
+    <i class="bi bi-arrow-left mr-2"></i>
+    <span>Previous</span>
+</a>
+{% endif %}

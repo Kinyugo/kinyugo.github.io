@@ -1,0 +1,13 @@
+{% if paginator.next_page %}
+<a href="{{ paginator.next_page_path | relative_url | append: '#all-posts'}}"
+    class="inline-flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300  hover:text-black dark:hover:text-gray-100 transition-colors">
+    <span>Next</span>
+    <i class="bi bi-arrow-right ml-2"></i>
+</a>
+{% else %}
+<a disabled href="#all-posts"
+    class="inline-flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300 cursor-not-allowed pointer-events-none opacity-30">
+    <span>Next</span>
+    <i class="bi bi-arrow-right ml-2"></i>
+</a>
+{% endif %}

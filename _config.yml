@@ -7,9 +7,31 @@ author_email: kinyugomaina@gmail.com
 author_title: "ML Researcher"
 author_phone: "+254 790 317 770"
 author_biography: >
-  Hello, my name is Kinyugo Maina, and I am an early-career ML Researcher with a strong focus on Generative AI. I hold a degree in Computer Science and have a deep passion for exploring the latest advancements in this field. I enjoy applying my knowledge to solve real-world problems and contribute to the growing community of Generative AI researchers.
+  Hello, my name is Kinyugo Maina, and I am an early-career ML Researcher
+  with a strong focus on Generative AI. I hold a degree in Computer Science
+  and have a deep passion for exploring the latest advancements in this field.
+  I enjoy applying my knowledge to solve real-world problems and contribute to
+  the growing community of Generative AI researchers.
+
+
 plugins:
   - jekyll-postcss
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 postcss:
   cache: false
+
+paginate: 6
+paginate_path: blog/page:num/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: katex
+
