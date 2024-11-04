@@ -2,16 +2,10 @@ url: "https://kinyugo.github.io" # the base hostname & protocol for your site, e
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Kinyugo Maina" # the name of your site, e.g. ACME Corp.
 author_name: "Kinyugo Maina"
-author_title: "ML Researcher"
+author_title: "ML Engineer & Researcher"
 author_email: kinyugomaina@gmail.com
-author_title: "ML Researcher"
 author_biography: >
-  Hello, my name is Kinyugo Maina, and I am an early-career ML Researcher
-  with a strong focus on Generative AI. I hold a degree in Computer Science
-  and have a deep passion for exploring the latest advancements in this field.
-  I enjoy applying my knowledge to solve real-world problems and contribute to
-  the growing community of Generative AI researchers.
-
+  Hello, I’m Kinyugo Maina, a Machine Learning Engineer and Researcher specializing in Generative AI. With a background in Computer Science, I create AI-driven solutions across virtual try-on, music synthesis, and virtual product photography, leveraging deep learning to tackle real-world challenges. I'm passionate about advancing Generative AI and contributing to this growing field.
 
 plugins:
   - jekyll-postcss
